@@ -1,25 +1,25 @@
 monday = [
-    {"time":"7:00","action":"Morning exercises","spheare":"Health"},
-    {"time":"8:00","action":"Finance planning","spheare":"Finances"},
-    {"time":"9:00","action":"Week planning","spheare":"Career"},
-    {"time":"10:00","action":"Report preparation","spheare":"Career"},
-    {"time":"11:00","action":"Report preparation","spheare":"Career"},
-    {"time":"12:00","action":"Weekly meeting","spheare":"Career"},
-    {"time":"13:00","action":"Math of Economics","spheare":"Career"},
-    {"time":"14:00","action":"Math of Economics","spheare":"Career"},
-    {"time":"15:00","action":"Language study","spheare":"Self-development"},
-    {"time":"16:00","action":"Language study","spheare":"Self-development"},
-    {"time":"17:00","action":"Master class for Product management","spheare":"Self-development"},
-    {"time":"18:00","action":"Time with family","spheare":"Family"},
-    {"time":"19:00","action":"Time with family","spheare":"Family"},
-    {"time":"20:00","action":"Football","spheare":"Health"},
-    {"time":"21:00","action":"Football","spheare":"Health"},
-    {"time":"22:00","action":"Bar after football","spheare":"Environment"},
-    {"time":"23:00","action":"Bar after football","spheare":"Environment"},
-    {"time":"00:00","action":"","spheare":"Free"}
+    {"time":"7:00","action":"get up","pan":"environment"},
+    {"time":"8:00","action":"breakfast","pan":"health"},
+    {"time":"9:00","action":"go to work","pan":"Career"},
+    {"time":"10:00","action":"work","pan":"Career"},
+    {"time":"11:00","action":"work","pan":"Career"},
+    {"time":"12:00","action":"Weekly meeting","pan":"Career"},
+    {"time":"13:00","action":"work","pan":"Career"},
+    {"time":"14:00","action":"class","pan":"education"},
+    {"time":"15:00","action":"class","pan":"class"},
+    {"time":"16:00","action":"classy","pan":"Self-development"},
+    {"time":"17:00","action":"class","pan":"Self-development"},
+    {"time":"18:00","action":"class","pan":"Self-development"},
+    {"time":"19:00","action":"dinner","pan":"Family"},
+    {"time":"20:00","action":"homework","pan":"education"},
+    {"time":"21:00","action":"homework","pan":"education"},
+    {"time":"22:00","action":"wash-up","pan":"environment"},
+    {"time":"23:00","action":"sleep","pan":"rest"},
+ 
 ]
 count = 0
 for element in monday:
-  if element['spheare']=='Career':
+  if element['pan']=='Career':
     count+=1
 print(count)
